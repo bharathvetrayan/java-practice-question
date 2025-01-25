@@ -67,4 +67,47 @@ public class Main
 	    }
 }
 *************************************************************************************************************************
+Q6.)
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the amount: ");
+        int N = scanner.nextInt(); 
+        scanner.close();
+        int notes100 = N / 100; 
+        N %= 100;
+        int notes50 = N / 50; 
+        N %= 50;
+        int notes10 = N / 10; 
+        N %= 10;
+        int notes5 = N / 5; 
+        N %= 5;
+        int notes2 = N / 2; 
+        N %= 2;
+        int notes1 = N; 
+        int totalNotes = notes100 + notes50 + notes10 + notes5 + notes2 + notes1;
+        System.out.println("Minimum number of notes: " + totalNotes);
+    }
+}
+****************************************************************************************************************************
+Q7.)
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the total number of attendees: ");
+        int totalAttendees = scanner.nextInt();
+        scanner.close();
+        int day1 = 2*totalAttendees / 7; 
+        int day2 = 2 * day1;          
+        int day3 = day1 / 2;          
+        System.out.println("Number of attendees on day 1: " + day1);
+        System.out.println("Number of attendees on day 2: " + day2);
+        System.out.println("Number of attendees on day 3: " + day3);
+    }
+}
+*********************************************************************************************************************************
+
 
