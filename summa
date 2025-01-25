@@ -1,1 +1,70 @@
+Q1.)
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    int num = summa.nextInt();
+	    System.out.printf("Square of "+num+" is :%.1f\n ",(float)(num*num));
+	    System.out.printf("Cube of "+num+" is :%.1f\n ",(float)(num*num*num));
+	    System.out.println("Square root of "+num+" is :"+(Math.sqrt(num)));
+	    }
+}
+**************************************************************************************************************
+Q2.)
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    int num1 = summa.nextInt();
+	    int num2 = summa.nextInt();
+	    System.out.printf("%.2f",(float)Math.pow(num1,num2));
+	   
+	    }
+}
+******************************************************************************************************************
+Q3.)
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    int num1 = summa.nextInt();
+	    int num2 = summa.nextInt();
+	    System.out.println((num1+num2));
+	   
+	    }
+}
+********************************************************************************************************************
+Q4.)
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    int mark1 = summa.nextInt();
+	    int mark2 = summa.nextInt();
+	    int mark3 = summa.nextInt();
+	    System.out.println("Total : "+(mark1+mark2+mark3));
+	    System.out.printf("Avg : %.2f",(float)(mark1+mark2+mark3)/3);
+	  
+	    }
+}
+
+**********************************************************************************************************************
+Q5.)
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    int diameter = summa.nextInt();
+	   System.out.printf("Sides : %.2f\n",(float)(Math.sqrt(3)*diameter));
+	   System.out.printf("Length : %.2f\n",(float)((Math.sqrt(3)*diameter)*3));
+	   System.out.printf("Breadth : %.2f",(float)4*diameter);
+	   
+	    }
+}
+*************************************************************************************************************************
 
