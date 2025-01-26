@@ -109,5 +109,50 @@ public class Main {
     }
 }
 *********************************************************************************************************************************
-
+Q8.)
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner summa = new Scanner(System.in);
+        int ammount = summa.nextInt();
+        int interest = summa.nextInt();
+        int years = summa.nextInt();
+        double SI = ammount*interest*years/100;
+        double total = ammount+SI;
+        double dis = 0.02*SI;
+        double totalsettle = total-dis;
+        System.out.printf("%.2f\n",SI);
+        System.out.printf("%.2f\n",total);
+        System.out.printf("%.2f\n",dis);
+        System.out.printf("%.2f",totalsettle);
+    }
+}
+*************************************************************************************************************************************
+Q9.)
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner summa = new Scanner(System.in);
+        int m = summa.nextInt();
+        int n = summa.nextInt();
+        int m1 = summa.nextInt();
+        int n1 = summa.nextInt();
+        int x = summa.nextInt();
+        int y = summa.nextInt();
+       System.out.print(m+(m+m1)-x+" ");
+       System.out.print(n+(n+n1)-y);
+    }
+}
+*************************************************************************************************************************************
+Q10.)
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner summa = new Scanner(System.in);
+        int m = summa.nextInt();
+        int n = summa.nextInt();
+       System.out.println(m|n);
+    }
+}
+***************************************************************************************************************************************
 
