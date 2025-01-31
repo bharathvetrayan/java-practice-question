@@ -1,0 +1,84 @@
+1.)
+input=5
+12345
+12345
+12345
+12345
+12345
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    int limit = summa.nextInt();
+	    for(int row=1;row<=limit;row++,System.out.println()){
+	        for(int col=1;col<=limit;col++)
+	        System.out.print(col);
+	    }
+	}
+}
+**************************************************************
+2.)
+input=5
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    int limit = summa.nextInt();
+	    for(int row=1;row<=limit;row++,System.out.println()){
+	        char ch=65;
+	        for(int col=1;col<=limit;col++)
+	        System.out.print(ch++);
+	    }
+	}
+}
+***************************************************************
+3.)
+input=5
+ABCDE
+FGHIJ
+KLMNO
+PQRST
+UVWXY
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    int limit = summa.nextInt();
+	      char ch=65;
+	    for(int row=1;row<=limit;row++,System.out.println()){
+	        for(int col=1;col<=limit;col++)
+	        System.out.print(ch++);
+	    }
+	}
+}
+****************************************************************
+4.)
+input=5
+*****
+*   *
+*   *
+*   *
+*****
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    int limit = summa.nextInt();
+	    for(int row=1;row<=limit;row++,System.out.println()){
+	        
+	        for(int col=1;col<=limit;col++)
+	        if(row==1||col==1||row==limit||col==limit)
+	        System.out.print("*");
+	        else
+	        System.out.print(" ");
+	    }
+	}
+}
