@@ -1,0 +1,73 @@
+1.)1.Write a program to accept N values into an integer array and display the contents
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    int size = summa.nextInt();
+	    int[] arr = new int [size];
+	    for(int ind=0;ind<size;ind++)
+	    arr[ind]=summa.nextInt();
+	    
+	    for(int ind=0;ind<size;ind++)
+	    System.out.print(arr[ind]+" ");
+	}
+}
+****************************************************************************************
+2.)Write a program to accept N values into an integer array and display in the reverse order.
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    int size = summa.nextInt();
+	    int[] arr = new int [size];
+	    for(int ind=0;ind<size;ind++)
+	    arr[ind]=summa.nextInt();
+	    
+	    for(int ind=size-1;ind>=0;ind--)
+	    System.out.print(arr[ind]+" ");
+	}
+}
+*********************************************************************************************
+3.) Write a  program to print the count of the elements in an array whose values are lesser than a key element in an unsorted array.
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    int size = summa.nextInt();
+	    int[] arr = new int [size];
+	    for(int ind=0;ind<size;ind++)
+	    arr[ind]=summa.nextInt();
+        System.out.print("count of the array: "+arr.length);
+	}
+}
+************************************************************************************************
+4.Write a program to find minimum of the array .
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    int size = summa.nextInt();
+	    int[] arr = new int [size];
+	    for(int ind=0;ind<size;ind++)
+	    arr[ind]=summa.nextInt();
+	    int min = arr[0];
+	    for(int ind=1;ind<size;ind++){
+	        if(arr[ind]<min){
+	        min = arr[ind];
+	        }
+	       
+	    }
+	    System.out.print("minimum is : "+min);
+	    
+	}
+}
+**********************************************************************************************
+4.) Write a program to find sum of the array 
