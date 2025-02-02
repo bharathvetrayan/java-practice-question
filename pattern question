@@ -82,3 +82,80 @@ public class Main
 	    }
 	}
 }
+******************************************************************************
+5.)
+*
+* *
+*   *
+*      *
+* * * * *
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	    int num=sc.nextInt();
+	    for(int row=1;row<=num;row++,System.out.println())
+	    {
+	        for(int col=1;col<=num;col++)
+	        {
+	            if(row==col||row==num||col==1)
+	            System.out.print("*");
+	            else
+	            System.out.print(" ");
+	         }
+	    }
+	}
+}
+***************************************************************************
+6.)
+*   *
+ * *
+  *
+ * *
+*   *
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	    for(int row=1;row<=2*limit;row++,System.out.println())
+	    {
+	        for(int col=1;col<=limit;col++)
+	        {
+	            if(col==row||row+col==limit+1)
+	            System.out.print("*");
+	            else
+	            System.out.print(" ");
+	         }
+	    }
+	}
+}
+********************************************************************************
+7.input=3
+1   5
+ 2 4
+  3
+ 2 4
+1   5
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	    int limit=sc.nextInt();
+	    for(int row=1;row<=2*limit;row++,System.out.println())
+	    {
+	        for(int col=1;col<=limit;col++)
+	        {
+	            if(col==row||row+col==limit+1)
+	            System.out.print(col);
+	            else
+	            System.out.print(" ");
+	         }
+	    }
+	}
+}
+*********************************************************************************************
+
