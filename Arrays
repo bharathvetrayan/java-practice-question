@@ -71,3 +71,117 @@ public class Main
 }
 **********************************************************************************************
 4.) Write a program to find sum of the array 
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    int size = summa.nextInt();
+	    int[] arr = new int[size];
+	    for(int ind=0;ind<size;ind++)
+	    arr[ind]=summa.nextInt();
+	    int sum=0;
+	    for(int ind=0;ind<size;ind++){
+	        sum=sum+arr[ind];
+	    }
+	    System.out.print(sum);
+	}
+}
+*****************************************************************************************************************************************
+5.) Write a program to search an element in the given array and print the searched elements index. If no such elements were found print -1
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    int size = summa.nextInt();
+	    int[] arr = new int[size];
+	    for(int ind=0;ind<size;ind++)
+	    arr[ind]=summa.nextInt();
+	    int target = summa.nextInt();
+	    int  index=-1;
+	    for(int ind=0;ind<size;ind++){
+	          if(arr[ind]==target){
+	              index=ind;
+	          }
+	    }
+	    System.out.print(index);
+	}
+}
+***************************************************************************************************************************************************
+7.)You are given an array of 0s and 1s in random order. Segregate 0s on left side and 1s on right side of the array
+import java.util.Arrays;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+      Scanner summa = new Scanner(System.in);
+      int size = summa.nextInt();
+      int[] arr = new int[size];
+      for(int ind=0;ind<size;ind++)
+      arr[ind]=summa.nextInt();
+        Arrays.sort(arr); 
+        System.out.println("Output array = " + Arrays.toString(arr));
+    }
+}
+***************************************************************************************************************************
+8.Write a program  to replace the array elements with sum of other  elements.
+import java.util.Arrays;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+      Scanner summa = new Scanner(System.in);
+      int size = summa.nextInt();
+      int[] arr = new int[size];
+      for(int ind=0;ind<size;ind++)
+      arr[ind]=summa.nextInt();
+       int sum=0;
+       for(int ind=0;ind<size;ind++){
+           sum=sum+arr[ind];
+       }
+       for(int ind=0;ind<size;ind++){
+           arr[ind]=sum-arr[ind];
+       }
+        System.out.print(Arrays.toString(arr));
+    }
+}
+***********************************************************************************************************************
+9.Write a program  to insert the value at given position in the array.
+import java.util.Arrays;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+      Scanner summa = new Scanner(System.in);
+      int size = summa.nextInt();
+      int[] arr = new int[size+1];
+      for(int ind=0;ind<size;ind++)
+      arr[ind]=summa.nextInt();
+      int val = summa.nextInt();
+      int position = summa.nextInt();
+      for(int ind=size;ind>=position;ind--){
+      arr[ind]=arr[ind-1];
+      }
+      arr[position-1]=val;
+      System.out.print(Arrays.toString(arr));
+    }
+}
+*******************************************************************************************************************************
+10.Write a program  to delete the value at given position from the array.
+import java.util.Arrays;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+      Scanner summa = new Scanner(System.in);
+      int size = summa.nextInt();
+      int[] arr = new int[size+1];
+      for(int ind=0;ind<size;ind++)
+      arr[ind]=summa.nextInt();
+      int position = summa.nextInt();
+      for(int ind=position-1;ind<size-1;ind++){
+      arr[ind]=arr[ind+1];
+      }
+       System.out.println("Updated array: " + Arrays.toString(Arrays.copyOf(arr, size - 1)));
+
+    }
+}
+***************************************************************************************************************************
+
