@@ -1,0 +1,57 @@
+1.) Merging two sorted arrays...
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    Set<Integer> arr= new TreeSet<Integer>();
+	    int n = summa.nextInt();
+	    for(int i=0;i<n;i++){
+	        int num=summa.nextInt();
+	        arr.add(num);
+	    }
+	    Set<Integer> arr1= new TreeSet<Integer>();
+	    for(int i=0;i<n;i++){
+	        int num=summa.nextInt();
+	        arr1.add(num);
+	    }
+	    System.out.print(arr);
+	    System.out.println();
+	    System.out.print(arr1);
+	    Set<Integer> union = new TreeSet<Integer>();
+	    union.addAll(arr);
+	    union.addAll(arr1);
+	    System.out.print(union);
+	}
+}
+***************************************************************************************
+2.)Finding duplicate elements in a Integer array.....
+
+import java.util.*;
+public class Main
+{
+    public static int contain(int[] arr){
+        
+        HashMap<Integer,Boolean> map = new HashMap<Integer,Boolean>();
+        for(int i : arr){
+            if(map.containsKey(i))
+            return i;
+            map.put(i,true);
+        }
+        return 0;
+        
+    }
+	public static void main(String[] args) {
+	    Scanner summa = new Scanner(System.in);
+	    int size = summa.nextInt();
+	    int[] arr = new int[size];
+	    for(int i=0;i<size;i++){
+	        arr[i]=summa.nextInt();
+	    }
+	    System.out.print(contain(arr));
+	}
+}
+******************************************************************************************
+
+
